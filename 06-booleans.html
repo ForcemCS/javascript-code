@@ -20,6 +20,7 @@
       console.log(true || false)
       console.log(!true)  
 
+      /*
       //在js中 falsy value 有 false 0 '' NaN undefined null  
       if (0) {
         console.log('falsy')
@@ -37,7 +38,13 @@
 
       let variable1 
       console.log(variable1)   //undefined 未定义
+      */
 
+      //如果为true, 返回'truthy',否则返回，'falsy'' 是if else的快捷方式
+      true ? 'truthy' : falsy;
+
+      const result = 2 + 3 > 5 ? 'OK' : 'NO'
+      console.log(result)
     </script>
   </body>
 </html>
