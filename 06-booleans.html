@@ -5,6 +5,7 @@
   </head>
   <body>
     <script>
+      /*
       // == 会尝试将两个值转为相同的类型
       console.log( 1 == '1.000')
       // === 可以避免默认的转换
@@ -18,7 +19,8 @@
 
       console.log(true && false)
       console.log(true || false)
-      console.log(!true)  
+      console.log(!true)
+      */  
 
       /*
       //在js中 falsy value 有 false 0 '' NaN undefined null  
@@ -39,12 +41,28 @@
       let variable1 
       console.log(variable1)   //undefined 未定义
       */
-
+      
+      /*
       //如果为true, 返回'truthy',否则返回，'falsy'' 是if else的快捷方式
       true ? 'truthy' : falsy;
 
       const result = 2 + 3 > 5 ? 'OK' : 'NO'
       console.log(result)
+      */
+      
+      /*
+      false && console.log('Hello')
+
+      const message = 2 + 3 > 4   && "You're exactly right"
+      console.log(message)
+      */
+
+      //设置默认值
+      const currency = 'EUR'   || 'USD'
+      console.log(currency)
+      
+      const currency1 = undefined   || 'USD'
+      console.log(currency1)
     </script>
   </body>
 </html>
