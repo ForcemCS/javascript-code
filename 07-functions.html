@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Functions</title>
+	</head>
+	<body></body>
+		<script>
+      /*
+      function func1 () {
+        console.log('Hello World');
+      }
+      func1();
+      //返回值
+      function func2 () {
+        return 2          //一但遇到return ,函数就执行完毕了
+      }
+      console.log(func2())
+      */
+
+      function calculateTax(parameter1,p2 = 0.1) {
+      console.log(p2)
+        console.log(parameter1 * p2 );
+      }
+
+      
+      calculateTax(2000,0.1);
+      calculateTax(300)   //undefined   Nan不是一个有效的计算
+
+		</script>
+	</body>
+</html>
