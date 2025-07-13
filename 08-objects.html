@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Objects</title>
+	</head>
+	<body></body>
+		<script>
+      
+      /*
+      const product = {
+        // name称之为property
+        name: 'sock',
+        price: 11                          
+      };
+
+      console.log(product)
+      console.log(product.name)
+
+      //改变对象的值
+      product.name  = 'cotton sock'
+      console.log(product.name)
+
+      //为对象添加新属性
+
+      product.newProperty = true
+      console.log(product)
+
+      //删除对象的属性
+      delete product.newProperty
+    */
+
+    const product2 =  {
+      name: 'shirt',
+      'delivery-time' : '1 day',
+      rating : {
+        starts: 4.5,
+        count: 87
+      },
+      func : function func1() {
+        console.log('函数在对象内部')
+      }
+    };
+
+    console.log(product2.name)
+    console.log(product2['name'])
+    console.log(product2['delivery-time']) 
+
+    console.log(product2.rating.count)
+    product2.func()   //对象中的函数，可以如下验证
+
+    console.log(typeof console)
+    console.log(typeof console.log) //function
+
+
+    const jsonString = JSON.stringify(product2)    //是一个json格式的字符串
+    console.log(jsonString)
+
+    console.log(JSON.parse(jsonString))
+		</script>
+	</body>
+</html>                                                             
