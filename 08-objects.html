@@ -28,7 +28,9 @@
       //删除对象的属性
       delete product.newProperty
     */
+     
 
+    /*
     const product2 =  {
       name: 'shirt',
       'delivery-time' : '1 day',
@@ -56,6 +58,58 @@
     console.log(jsonString)
 
     console.log(JSON.parse(jsonString))
+    */
+
+    
+    // Auto-Boxing
+    //自动将字符串包裹在一个类似盒子的对象中
+    console.log('hello'.length);
+    console.log('hello'.toUpperCase()); //所有字母大写
+
+    const object1 = {
+      message: 'hello'
+    };
+
+    const object2 = object1;
+    object1.message = 'Good Jobs'
+    console.log(object2.message)
+
+    const object4 = {
+      message: "Good job!",
+      price: 799
+    };
+
+
+    // 快捷方式
+    //const message = object4.message;  和下边相同的效果
+    const { message, price } = object4 ; 
+
+    console.log(price)
+    const object5 = {
+      //message : message,
+      //price: price
+      
+      message, 
+      price , //快捷写法，与上边的效果相同
+
+      // methodtest: function my_func() {
+      //   console.log('method test')
+      // }
+      
+      //快捷写法,方法简写
+      //
+      methodtest() {
+        console.log('method test')
+      }
+    };
+
+    console.log(object5)
+    object5.methodtest()               //输出method test
+
+
+
+
+
 		</script>
 	</body>
 </html>                                                             
